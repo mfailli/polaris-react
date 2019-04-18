@@ -88,7 +88,7 @@ class EmbeddedAppModalExample extends React.Component {
 Modals should:
 
 - Only be closed by clicking the `X` or `Cancel` button and not by clicking the backdrop outside the modal, which is a large touch target that could result in accidental presses. Modals require merchants to take an action and should prevent the merchant from accidentally closing the modal without completing the required task.
-- Avoid having more than two buttons (e.g. primary and secondary) at the bottom. This prevents complex or unclear hierachy, as well as crowding on mobile screens. Since modals are for focused tasks, they should have focused actions. In some cases however, a [tertiary action](/components/Modal#section-tertiary-actions) may be appropriate.
+- Avoid having more than two buttons (e.g. primary and secondary) at the bottom. This prevents complex or unclear hierachy, as well as crowding on mobile screens. Since modals are for focused tasks, they should have focused actions. In some cases however, a [tertiary action](#tertiary-actions) may be appropriate.
 
 ---
 
@@ -164,12 +164,6 @@ Actions should be:
 
 - Clear and predictable: merchants should be able to anticipate what will happen when they click a button. Never deceive a merchant by mislabeling an action.
 
-### Tertiary actions
-
-Tertiary actions should:
-- Only be used when the action requires the context of the content in the modal. For example: 
-- Never dismiss the modal, unlike primary or secondary actions.
-
 <!-- usagelist -->
 
 #### Do
@@ -213,6 +207,14 @@ Tertiary actions should:
 - Add a menu item
 
 <!-- end -->
+
+<a name="tertiary-actions"></a>
+
+### Tertiary actions
+
+Tertiary actions should:
+- Only be used when the action requires the context of the content in the modal. For example: 
+- Never dismiss the modal, unlike primary or secondary actions.
 
 ### Footer
 
