@@ -216,6 +216,20 @@ Tertiary actions should:
 - Only be used when the action requires the context of the content in the modal
 - Never be used to dismiss the modal
 
+<!-- usagelist -->
+
+#### Do
+
+- Use a plain button for a tertiary action if needed
+  ![Screenshot of modal with a plain button as a tertiary action](/public_images/components/Modal/do-use-plain-button-for-tertiary-action.png)
+
+#### Don’t
+
+- Use a tertiary action for a destructive action
+  ![Screenshot of modal with a destructive button as a tertiary action](/public_images/components/Modal/dont-use-destructive-tertiary-action.png)
+
+<!-- end -->
+
 ### Footer
 
 Body content should be:
