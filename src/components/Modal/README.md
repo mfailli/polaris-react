@@ -214,7 +214,7 @@ Actions should be:
 
 Tertiary actions should:
 - Only be used when the action requires the context of the content in the modal.
-- Never dismiss the modal, unlike primary or secondary actions.
+- Never be used to dismiss the modal
 
 ### Footer
 
