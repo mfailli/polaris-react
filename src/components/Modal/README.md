@@ -88,7 +88,7 @@ class EmbeddedAppModalExample extends React.Component {
 Modals should:
 
 - Only be closed by clicking the `X` or `Cancel` button and not by clicking the backdrop outside the modal, which is a large touch target that could result in accidental presses. Modals require merchants to take an action and should prevent the merchant from accidentally closing the modal without completing the required task.
-- Avoid having more than two buttons (e.g. primary and secondary) at the bottom. This prevents complex or unclear hierachy, as well as crowding on mobile screens. Since modals are for focused tasks, they should have focused actions. In some cases however, a [tertiary action](#tertiary-actions) may be appropriate.
+- Avoid having more than two buttons (primary and secondary) at the bottom. This prevents unclear action hierarchy and crowding on mobile screens. Since modals are for focused tasks, they should have focused actions. In some cases however, a [tertiary action](#tertiary-actions) may be appropriate.
 
 ---
 
