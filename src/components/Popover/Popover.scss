@@ -6,11 +6,28 @@ $content-max-width: rem(400px);
 .Popover {
   max-width: calc(100vw - #{2 * spacing()});
   margin: $visible-portion-of-arrow spacing(tight) spacing();
-  opacity: 1;
   box-shadow: shadow(deep);
   border-radius: border-radius();
+}
+
+.PopoverEnter {
+  opacity: 0;
+}
+
+.PopoverEnterActive {
+  opacity: 1;
   will-change: opacity, left, top;
   transition: opacity duration() easing(in);
+}
+
+.PopoverExit {
+  opacity: 1;
+}
+
+.PopoverExitActive {
+  opacity: 0;
+  will-change: opacity, left, top;
+  transition: opacity duration() easing(out);
 }
 
 .fullWidth {

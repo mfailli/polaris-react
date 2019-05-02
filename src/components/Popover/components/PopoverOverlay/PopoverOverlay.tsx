@@ -4,7 +4,7 @@ import {write} from '@shopify/javascript-utilities/fastdom';
 import {classNames} from '@shopify/react-utilities/styles';
 import {isElementOfType, wrapWithComponent} from '@shopify/react-utilities';
 import {durationBase} from '@shopify/polaris-tokens';
-import {Transition} from 'react-transition-group';
+import {CSSTransition} from 'react-transition-group';
 
 import {Key} from '../../../../types';
 import {overlay} from '../../../shared';
@@ -62,9 +62,20 @@ export default class PopoverOverlay extends React.PureComponent<Props, never> {
   render() {
     const {active} = this.props;
     return (
-      <Transition in={active} timeout={durationBase} mountOnEnter unmountOnExit>
+      <CSSTransition
+        in={active}
+        timeout={durationBase}
+        mountOnEnter
+        unmountOnExit
+        classNames={{
+          enter: styles.PopoverEnter,
+          enterActive: styles.PopoverEnterActive,
+          exit: styles.PopoverExit,
+          exitActive: styles.PopoverExitActive,
+        }}
+      >
         {this.renderOverlay}
-      </Transition>
+      </CSSTransition>
     );
   }
 
