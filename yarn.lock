@@ -3801,10 +3801,10 @@ babel-preset-react-app@^7.0.0:
     babel-plugin-macros "2.5.0"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
 
-babel-preset-shopify@^18.1.0:
-  version "18.1.0"
-  resolved "https://registry.yarnpkg.com/babel-preset-shopify/-/babel-preset-shopify-18.1.0.tgz#196abfd532df22e02cc99f9f1dcdf0d68f679a31"
-  integrity sha512-UF7WTXaYoezw6N0hixzdCGNHz/vtO3mRmraGshfUSF/HHCynSMZ8QB237kz/mMtTKAOIJkF18FZLfhyfphkXTw==
+babel-preset-shopify@^18.1.0, babel-preset-shopify@^18.1.1:
+  version "18.1.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-shopify/-/babel-preset-shopify-18.1.1.tgz#5a9e6f31eeddf41bf255785af4a8f47c930e8a85"
+  integrity sha512-NT46Pmu4I5BHXqh/beNbtAuaqHpj//NNj2JOmgZaEIQq/R4RTp4A0rsRNd98RJ01hBhsqO29j0kHXCW9ffWiKA==
   dependencies:
     "@babel/core" "^7.4.3"
     "@babel/plugin-proposal-class-properties" "^7.4.0"
