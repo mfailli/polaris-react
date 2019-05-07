@@ -114,7 +114,7 @@ To test the changes on a mobile or virtual machine, you will need to open the so
 
 ### Testing in a consuming project
 
-1. In your terminal, run `yarn run build-consumer PROJECT_DIRECTORY` for the polaris-react repo
+1. In your terminal, run `yarn run build-consumer PROJECT_DIRECTORY` from the polaris-react repo
 
 `PROJECT_DIRECTORY` is where the build will be copied, which must be a sibling of the `polaris-react` directory.
 
