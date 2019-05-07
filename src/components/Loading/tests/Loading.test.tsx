@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {Loading as AppBridgeLoading} from '@shopify/app-bridge/actions';
-import * as PropTypes from 'prop-types';
 import {mountWithAppProvider} from 'test-utilities';
 import {Provider, createFrameContext} from '../../Frame';
 
@@ -43,6 +42,10 @@ describe('<Loading />', () => {
     const dispatch = jest.fn();
     AppBridgeLoading.create = jest.fn().mockReturnValue({dispatch});
 
+    afterEach(() => {
+      dispatch.mockReset();
+    });
+
     it('starts loading on mount', () => {
       const {polaris} = mountWithAppBridge(<Loading />);
 
@@ -65,8 +68,7 @@ function mountWithAppBridge(element: React.ReactElement<any>) {
   const appBridge = {};
   const polaris = {appBridge};
   const loading = mountWithAppProvider(element, {
-    context: {frame: {}, polaris},
-    childContextTypes: {frame: PropTypes.any},
+    context: {frame: {}, polaris: {polaris}},
   });
 
   return {loading, polaris};

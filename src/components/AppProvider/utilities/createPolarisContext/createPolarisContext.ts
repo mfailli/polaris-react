@@ -4,7 +4,7 @@ import {
   ThemeContext as CreateThemeContext,
 } from '../../../ThemeProvider';
 import {AppProviderProps} from '../../types';
-import {StickyManager} from '../withSticky';
+import StickyManager from '../StickyManager';
 import createAppProviderContext, {
   CreateAppProviderContext,
 } from '../createAppProviderContext';

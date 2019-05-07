@@ -1,6 +1,5 @@
 import * as React from 'react';
-import {noop} from '@shopify/javascript-utilities/other';
-import {StickyManager} from '../../withSticky';
+import StickyManager from '../../StickyManager';
 import ScrollLockManager from '../../ScrollLockManager';
 import createPolarisContext from '../createPolarisContext';
 
@@ -31,8 +30,6 @@ describe('createPolarisContext()', () => {
         link: expect.any(Link),
         stickyManager: expect.any(StickyManager),
         scrollLockManager: expect.any(ScrollLockManager),
-        subscribe: noop,
-        unsubscribe: noop,
         appBridge: undefined,
       },
       polarisTheme: {
@@ -80,8 +77,6 @@ describe('createPolarisContext()', () => {
         link: new Link(CustomLinkComponent),
         stickyManager,
         scrollLockManager,
-        subscribe: noop,
-        unsubscribe: noop,
         appBridge: undefined,
       },
       polarisTheme: {
@@ -117,8 +112,6 @@ describe('createPolarisContext()', () => {
         link: new Link(CustomLinkComponent),
         stickyManager,
         scrollLockManager,
-        subscribe: noop,
-        unsubscribe: noop,
         appBridge: undefined,
       },
       polarisTheme: {
@@ -140,8 +133,6 @@ describe('createPolarisContext()', () => {
         link: expect.any(Link),
         stickyManager: expect.any(StickyManager),
         scrollLockManager: expect.any(ScrollLockManager),
-        subscribe: noop,
-        unsubscribe: noop,
         appBridge: undefined,
       },
       polarisTheme: {

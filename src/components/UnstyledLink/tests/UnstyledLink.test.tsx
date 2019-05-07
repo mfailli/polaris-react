@@ -8,7 +8,7 @@ describe('<UnstyledLink />', () => {
     it('uses a custom link component instead of an anchor', () => {
       const CustomLinkComponent = () => <div />;
       const link = new Link(CustomLinkComponent);
-      const mockContext = {context: {polaris: {link}}};
+      const mockContext = {context: {polaris: {polaris: {link}}}};
       const anchorElement = mountWithAppProvider(
         <UnstyledLink external url="https://shopify.com" />,
         mockContext,
@@ -20,7 +20,7 @@ describe('<UnstyledLink />', () => {
     it('doesn’t have polaris prop', () => {
       const CustomLinkComponent = () => <div />;
       const link = new Link(CustomLinkComponent);
-      const mockContext = {context: {polaris: {link}}};
+      const mockContext = {context: {polaris: {polaris: {link}}}};
       const anchorElement = mountWithAppProvider(
         <UnstyledLink external url="https://shopify.com" />,
         mockContext,

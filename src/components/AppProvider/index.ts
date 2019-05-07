@@ -7,16 +7,12 @@ export {
   withAppProvider,
   createAppProviderContext,
   createPolarisContext,
-  withSticky,
   WithAppProviderProps,
   TranslationDictionary,
   PrimitiveReplacementDictionary,
   ComplexReplacementDictionary,
   CreateAppProviderContext,
 } from './utilities';
-export {
-  AppProviderProps as Props,
-  Context,
-  polarisAppProviderContextTypes,
-} from './types';
+export {AppProviderProps as Props, Context} from './types';
+export {Provider, Consumer} from './Context';
 export {default} from './AppProvider';

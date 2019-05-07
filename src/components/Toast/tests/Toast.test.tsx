@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as PropTypes from 'prop-types';
 import {Toast as AppBridgeToast} from '@shopify/app-bridge/actions';
 import {mountWithAppProvider} from 'test-utilities';
 import {noop} from '../../../utilities/other';
@@ -117,8 +116,7 @@ function mountWithAppBridge(element: React.ReactElement<any>) {
   const appBridge = {};
   const polaris = {appBridge};
   const toast = mountWithAppProvider(element, {
-    context: {frame: {}, polaris},
-    childContextTypes: {frame: PropTypes.any},
+    context: {frame: {}, polaris: {polaris}},
   });
 
   return {toast, polaris};

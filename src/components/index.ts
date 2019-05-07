@@ -9,7 +9,6 @@ export {
   default as AppProvider,
   Props as AppProviderProps,
   Context as AppProviderContext,
-  polarisAppProviderContextTypes as polarisContextTypes,
   createAppProviderContext,
   createPolarisContext,
   withAppProvider,
@@ -259,6 +258,7 @@ export {
   default as ThemeProvider,
   Props as ThemeProviderProps,
   Context as ThemeProviderContext,
+  createThemeContext,
 } from './ThemeProvider';
 
 export {default as Toast} from './Toast';
